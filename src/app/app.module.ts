@@ -10,7 +10,9 @@ import { SalseDataService } from './salse-data.service';
 import { SalseData2Service } from './salse-data2.service';
 import { InitCapsPipe } from './shared/init-caps.pipe';
 import { LoginModule } from './login/login.module';
-import { DashboardComponent } from './dashboard/dashboard.component'
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { DashboardComponent } from './dashboard/dashboard.component'
     OrdersComponent,
     SearchBoxDirective,
     InitCapsPipe,
-    DashboardComponent
+    DashboardComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    AdminModule
   ],
   providers: [SalseDataService, SalseData2Service],
   bootstrap: [AppComponent]
