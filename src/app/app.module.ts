@@ -13,6 +13,7 @@ import { LoginModule } from './login/login.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminModule } from './admin/admin.module';
+import { MaterialModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AdminModule } from './admin/admin.module';
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    AdminModule
+    AdminModule,
+    MaterialModule
   ],
   providers: [SalseDataService, SalseData2Service],
   bootstrap: [AppComponent]
